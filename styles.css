@@ -1,0 +1,457 @@
+/* Global Styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", sans-serif;
+    background-color: #EEEEEE;
+    color: #333;
+}
+
+/* Body and Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: auto;
+}
+
+/*Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+    font-family: Arial, sans-serif;
+}
+
+/* Left Section */
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 30px;
+    margin-right: 10px;
+}
+
+.nav-left a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    padding: 8px 12px;
+    transition: all 0.3s ease;
+}
+
+/* Center Section */
+.nav-center {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center; 
+}
+
+.nav-center a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    padding: 8px 12px;
+}
+
+
+
+/* Right Section */
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-right a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    /* margin: 15px; */
+    padding: 8px 12px;
+}
+
+/* Login and Signup Buttons */
+.signup {
+    border: 2px solid black;
+    border-radius: 5px;
+    color: white;
+}
+
+/* User Info & Dropdown */
+.user-info {
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Dropdown Button */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: black;
+    font-size: 16px;
+    padding: 5px;
+}
+
+/* Dropdown Content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    min-width: 75px;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Dropdown Links */
+.dropdown-content a {
+    display: block;
+    color: #333;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.bold {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Content */
+#content {
+    text-align: center;
+    padding: 25px;
+    flex: 1; /* Pushes footer to bottom if there's little content */
+}
+
+/* Footer */
+#footer {
+    background-color: #1a3351;
+    color: white;
+    text-align: center;
+    /* padding: 5px; */
+}
+
+/* Form Styling */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+form {
+    max-width: 450px;
+    width: 90%;
+    padding: 25px;
+    background: #fff;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* form h2 {
+    text-align: center;
+    font-size: 22px;
+    color: #222831;
+    margin-bottom: 15px;
+} */
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 15px;
+    color: #444;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 94%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    background-color: whitesmoke;
+}
+
+/* Textarea */
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Submit Button */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #51aaf8;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+}
+
+/* Welcome Section */
+#welcome-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 90%;
+}
+
+.welcome-image {
+    width: 50%; 
+    height: 50%;
+    object-fit: cover; /* Maintain aspect ratio */
+    border-radius: 8px;
+}
+
+.welcome-text {
+    width: 45%;
+    text-align: left;
+}
+
+.welcome-text h2 {
+    font-size: 24px;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.welcome-text p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Error Messages */
+.error {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* View All Blogs Button */
+.button-container {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.view-blogs-btn {
+    display: inline-block;
+    
+    background-color: #51aaf8;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Table Header */
+table th {
+    /* background-color: #222831; */
+    background-color: #51aaf8;
+    color: white;
+    font-weight: bold;
+    padding: 12px;
+    text-align: left;
+}
+
+/* Table Rows */
+table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Hover Effect */
+table tr:hover {
+    background-color: #E3FDFD;
+}
+
+/* Blog Details */
+main {
+    width: 75%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px auto;
+}
+
+article {
+    border-bottom: 1px solid #e1e8ed;
+    padding: 15px;
+}
+
+article h2 {
+    font-size: 18px;
+    margin-bottom: 3px;
+    text-align: center;
+}
+
+.blog-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    border-bottom: 1px solid whitesmoke;
+    border-top: 1px solid whitesmoke;
+}
+
+/* Align Author to Left */
+.blog-meta .author {
+    text-align: left;
+}
+
+/* Align Date to Right */
+.blog-meta .post-date {
+    text-align: right;
+}
+
+article p {
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Comments */
+.comments ul {
+    list-style: none;
+    padding: 0;
+}
+
+.comments li {
+    display: flex;
+    align-items: flex-start;
+    background: #fff;
+    padding: 3px;
+    border-bottom: 1px solid whitesmoke;
+}
+
+.comments li strong {
+    font-size: 14px;
+}
+
+.comments li p {
+    margin: 0 0 5px 10px;
+    font-size: 14px;
+}
+
+/* Dashboard Stats */
+.dashboard-stats {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.stat-box {
+    background-color: #51aaf8;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    width: 40%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.stat-box h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.stat-box p {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Recent Blogs */
+.recent-blogs {
+    list-style: none;
+    padding: 0;
+}
+
+.recent-blogs li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.recent-blogs a {
+    text-decoration: none;
+    color: #51aaf8;
+    font-weight: bold;
+}
+
+.recent-blogs a:hover {
+    text-decoration: underline;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.pagination-button {
+    background-color: #51aaf8; 
+    color: white; 
+    padding: 10px 15px;
+    border: none;
+    margin: 10px;
+    border-radius: 5px; 
+    text-decoration: none; 
+}
+.nav-center a:hover,
+.nav-right a:hover {
+    color:#51aaf8;
+    text-decoration: underline;
+    transition: all 0.3s ease;
+}
